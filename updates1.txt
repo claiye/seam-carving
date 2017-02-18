@@ -1,0 +1,17 @@
+- created various new files with functions for each mode (crop, uploaded, home, carving, rotate)
+	- mousePressed, keyPressed, redrawAll, and its various functions
+	- home mode allows for upload of an image 
+	- uploaded allows for the display of the uploaded image (and transferring to different editing modes) 
+	- rotate mode successfully rotates image and displays it (but huge loss in quality of rotated pics) 
+
+- created file photoEditApp, which, when ran, starts the app 
+	- unites all the different “modes” of the app and calls the correct functions 
+
+- seamCarving contains the algorithm for deleting a set number of seams 
+	- added function allowing for finding one specific seam and carving it out 
+	- added function that recalculates the energy of all affected pixels after a particular seam is carved out 
+	- wrapped in larger, overall function which allows for the seam carving algorithm to run a number of times, deleting however many seams 
+	- successfully tested on small 30x30 image 
+
+- floatingWindow is the editor 
+	- so far only exists as a separate floating window, functions yet to be added 
